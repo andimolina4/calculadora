@@ -1,3 +1,24 @@
-<p>
-  calculadora works!
-</p>
+<div class="container">
+  <h1>{{ titulo }}</h1>
+  <form>
+    <div class="form-group">
+      <label for="operandoA">Operando A</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Escribe operando A"
+        id="operandoA"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="operandoB">Operando B</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Escribe operando B"
+      />
+    </div>
+  </form>
+  <button class="btn btn-primary mb-3" (click)="sumar()">Sumar</button>
+  <p>Resultado: {{ resultado }}</p>
+</div>
